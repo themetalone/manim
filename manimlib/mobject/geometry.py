@@ -325,6 +325,7 @@ class Circle(Arc):
             np.sqrt(mobject.get_width()**2 + mobject.get_height()**2)
         )
         self.scale(buffer_factor)
+        return self
 
     def point_at_angle(self, angle):
         start_angle = angle_of_vector(
